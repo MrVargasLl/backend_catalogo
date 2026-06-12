@@ -26,6 +26,8 @@ app.use( '/api', authRoutes )
 
 mongoose.connect( process.env.MONGO_URI ).then( () => console.log("Conectado a MongoDB") )  
 
-app.listen( PORT, () => {
+/* app.listen( PORT, () => {
   console.log(`El servidor está corriendo en http://localhost:${PORT}`)
-} )
+} ) */
+
+  export default app
